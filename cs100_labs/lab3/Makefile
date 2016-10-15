@@ -3,24 +3,17 @@
 #Variables
 COMPILE = g++
 FLAGS = -g -W -Wall -Werror
-OBJS = add.o mul.o sub.o div.o sqr.o op.o vectCont.o listCont.o #bubSort.o selSort.o sort.o   ##container.o (never made???)
+OBJS = add.o mul.o sub.o div.o sqr.o op.o vectCont.o listCont.o #bubSort.o selSort.o   ###sort.o container.o (never made???)
 
 #Targets
 all: main.cpp $(OBJS)
 	$(COMPILE) $(FLAGS) -o a.out main.cpp $(OBJS)
-	
-#NEVER MADE
-#container.o: container.cpp container.h 
-#$(COMPILE) $(FLAGS) -c container.cpp 
 
 vectCont.o: vectCont.cpp vectCont.h container.h
 	$(COMPILE) $(FLAGS) -c vectCont.cpp 
 
 listCont.o: listCont.cpp listCont.h container.h
 	$(COMPILE) $(FLAGS) -c listCont.cpp 
-
-#sort.o: sort.cpp sort.h
-#$(COMPILE) $(FLAGS) -c sort.cpp
 
 #bubSort.o: bubSort.cpp bubSort.h sort.h
 #$(COMPILE) $(FLAGS) -c bubSort.cpp 
@@ -51,3 +44,9 @@ clean:
 	
 clear:
 	rm -rf *~ *.o a.out
+	
+#container.o: container.cpp container.h 
+#$(COMPILE) $(FLAGS) -c container.cpp 
+
+#sort.o: sort.cpp sort.h
+#$(COMPILE) $(FLAGS) -c sort.cpp
