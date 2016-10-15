@@ -1,8 +1,31 @@
 currently editing unfinished
 
+bubSort -> needs: sort(Container*)
+selSort -> needs: sort(Container*)
+
+listCont -> needs: sort(), swap()
+vectCont -> needs: sort()
+
+--------------------
+
+base
+{
+    add
+    sub
+    mul
+    div
+    sqr
+    op
+}
+
 sort
-bubSort
-selSort
+{
+    bubSort
+    selSort
+}
+
 container
-listCont
-vectCont
+{
+    listCont
+    vectCont
+}

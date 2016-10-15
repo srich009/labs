@@ -3,17 +3,17 @@
 using namespace std;
 
 //Default constructor
-Mult::Mult()
+Mul::Mul()
 :x('*'), childLeft(0), childRight(0)
 {}
 
 //Constructor with to operands
-Mult::Mult(Base* a, Base* b)
+Mul::Mul(Base* a, Base* b)
 :x('*'), childLeft(a), childRight(b)
 {}
 
-//Evaluates multiplication
-double Mult::evaluate()
+//Evaluates Muliplication
+double Mul::evaluate()
 {
     return ( childLeft->evaluate() * childRight->evaluate() );
 }

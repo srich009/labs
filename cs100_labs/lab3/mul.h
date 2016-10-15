@@ -3,7 +3,7 @@
 
 #include "base.h"
 
-class Mult: public Base
+class Mul: public Base
 {
     
 public:
@@ -13,8 +13,8 @@ Base* childLeft;
 Base* childRight;
 
 /* Constructors */
-Mult();
-Mult(Base* a, Base* b);
+Mul();
+Mul(Base* a, Base* b);
 
 /* Virtual Functions */
 virtual double evaluate();
