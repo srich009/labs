@@ -98,19 +98,19 @@ int main ()
     std::cout << std::endl;
 
     // TEST List && SELECT
-    ListContainer* container4 = new ListContainer();
-    container4 -> add_element(A);
-    container4 -> add_element(B);
-    container4 -> add_element(C);
-    container4 -> add_element(D);
-    container4 -> add_element(E);
-    container4 -> add_element(F);
-    cout << "Container Before Sort: " << endl;
-    container4 -> print();
-    cout << "Container After Sort: " << endl;
-    container4 -> set_sort_function(new SelectionSort());
-    container4 -> sort();
-    container4 -> print();
+    // ListContainer* container4 = new ListContainer();
+    // container4 -> add_element(A);
+    // container4 -> add_element(B);
+    // container4 -> add_element(C);
+    // container4 -> add_element(D);
+    // container4 -> add_element(E);
+    // container4 -> add_element(F);
+    // cout << "Container Before Sort: " << endl;
+    // container4 -> print();
+    // cout << "Container After Sort: " << endl;
+    // container4 -> set_sort_function(new SelectionSort());
+    // container4 -> sort();
+    // container4 -> print();
     
     return 0;
 }
