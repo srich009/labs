@@ -14,9 +14,9 @@
 #include "container.h"
 #include "vectCont.h"
 #include "listCont.h"
-//#include "sort.h"
-//#include "bubSort.h"
-//#include "selSort.h"
+#include "sort.h"
+#include "bubSort.h"
+#include "selSort.h"
 
 using namespace std ;
 
@@ -58,10 +58,12 @@ int main ()
     container1 -> add_element(D);
     cout << "Container Before Sort: " << endl;
     container1 -> print();
-    // cout << "Container After Sort: " << endl;
-    // container1 -> set_sort_function(new SelectionSort());
-    // container1 -> sort();
-    // container1 -> print();
+    cout << "Container After Sort: " << endl;
+    container1 -> set_sort_function(new SelectionSort());
+    container1 -> sort();
+    container1 -> print();
+    
+    std::cout << std::endl;
     
     // TEST LIST CONTAINER && BUBBLE_SORT
     ListContainer* container2 = new ListContainer();
@@ -71,10 +73,44 @@ int main ()
     container2 -> add_element(D);
     cout << "Container Before Sort: " << endl;
     container2 ->print();
-    // cout << "Container After Sort: " << endl;
-    // container2 -> set_sort_function(new BubbleSort());
-    // container2 -> sort();
-    // container2 -> print();
+    cout << "Container After Sort: " << endl;
+    container2 -> set_sort_function(new BubbleSort());
+    container2 -> sort();
+    container2 -> print();
+    
+    std::cout << std::endl;
 
+    // TEST VECTOR && BUBBLE
+    VectorContainer* container3 = new VectorContainer();
+    container3 -> add_element(A);
+    container3 -> add_element(B);
+    container3 -> add_element(C);
+    container3 -> add_element(D);
+    container3 -> add_element(E);
+    container3 -> add_element(F);
+    cout << "Container Before Sort: " << endl;
+    container3 -> print();
+    cout << "Container After Sort: " << endl;
+    container3 -> set_sort_function(new BubbleSort());
+    container3 -> sort();
+    container3 -> print();
+
+    std::cout << std::endl;
+
+    // TEST List && SELECT
+    ListContainer* container4 = new ListContainer();
+    container4 -> add_element(A);
+    container4 -> add_element(B);
+    container4 -> add_element(C);
+    container4 -> add_element(D);
+    container4 -> add_element(E);
+    container4 -> add_element(F);
+    cout << "Container Before Sort: " << endl;
+    container4 -> print();
+    cout << "Container After Sort: " << endl;
+    container4 -> set_sort_function(new SelectionSort());
+    container4 -> sort();
+    container4 -> print();
+    
     return 0;
 }

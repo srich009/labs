@@ -1,11 +1,3 @@
-currently editing unfinished
-
-bubSort -> needs: sort(Container*)
-selSort -> needs: sort(Container*)
-
-listCont -> needs: sort(), swap()
-vectCont -> needs: sort()
-
 --------------------
 
 base

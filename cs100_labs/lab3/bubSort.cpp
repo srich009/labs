@@ -1,18 +1,32 @@
+#include "bubSort.h"
 
-// change to doubles
 
-/*
-void bubble_sort(vector<int> &v)
+
+void BubbleSort::sort(Container* container)
 {
-   for(unsigned i = 0; i < v.size(); i++)
+   vector<Base*> temp;
+   int counter = 0;
+   while(counter < container->size())
    {
-      for(unsigned j = i + 1; j < v.size(); j++)
+      Base* a = container->at(counter);
+      temp.push_back(a);
+      counter++;
+   }
+   for(unsigned i = 0; i < temp.size(); i++)
+   {
+      for(unsigned j = 0; j < temp.size(); j++)
       {
-         if(v.at(i) > v.at(j))
+         if( j != temp.size() - 1)
          {
-            swap(v.at(i), v.at(j));
+            if(temp.at(j)->evaluate() > temp.at(j + 1)->evaluate())
+            {
+               Base* a = temp.at(j);
+               temp.at(j) = temp.at(j + 1);
+               temp.at(j + 1) = a;
+               
+               container->swap(static_cast<int>(j), static_cast<int>((j+1)));
+            }
          }
       }
    }
 }
-*/

@@ -1,5 +1,7 @@
 #include "container.h"
 #include "listCont.h"
+#include <iostream>
+#include <algorithm>
 
 // push the top pointer of the tree into container
 void ListContainer::add_element(Base* element)
@@ -24,7 +26,7 @@ void ListContainer::sort()
 {
     try
     {
-        //sort_function->sort(); //??
+        sort_function->sort(this); //??
     }
     catch(std::exception& e)
     {
@@ -37,9 +39,25 @@ void ListContainer::sort()
 //switch tree locations
 void ListContainer::swap(int i, int j)
 {
+
+    std::list<Base*>::iterator it = mem.begin();
+    std::list<Base*>::iterator jt = mem.begin();
     
-        
-    std:: cout << i << ' ' << j << std::endl;
+    int k = 0;
+    while(k < i)
+    {
+        it++;
+        k++;
+    }
+    
+    k = 0;
+    while(k < j)
+    {
+        jt++;
+        k++;
+    }
+    std::iter_swap(it, jt);
+    
 }
 //--------------------------------------------------------------
 

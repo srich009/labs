@@ -2,8 +2,8 @@
 
 #Variables
 COMPILE = g++
-FLAGS = -g -W -Wall -Werror
-OBJS = add.o mul.o sub.o div.o sqr.o op.o vectCont.o listCont.o #bubSort.o selSort.o   ###sort.o container.o (never made???)
+FLAGS = -g -ansi -pedantic -W -Wall -Werror
+OBJS = add.o mul.o sub.o div.o sqr.o op.o vectCont.o listCont.o selSort.o bubSort.o
 
 #Targets
 all: main.cpp $(OBJS)
@@ -15,11 +15,11 @@ vectCont.o: vectCont.cpp vectCont.h container.h
 listCont.o: listCont.cpp listCont.h container.h
 	$(COMPILE) $(FLAGS) -c listCont.cpp 
 
-#bubSort.o: bubSort.cpp bubSort.h sort.h
-#$(COMPILE) $(FLAGS) -c bubSort.cpp 
+bubSort.o: bubSort.cpp bubSort.h sort.h
+	$(COMPILE) $(FLAGS) -c bubSort.cpp 
 
-#selSort.o: selSort.cpp selSort.h sort.h
-#$(COMPILE) $(FLAGS) -c selSort.cpp 
+selSort.o: selSort.cpp selSort.h sort.h
+	$(COMPILE) $(FLAGS) -c selSort.cpp 
 	
 op.o: op.cpp op.h base.h
 	$(COMPILE) $(FLAGS) -c op.cpp 
@@ -45,8 +45,3 @@ clean:
 clear:
 	rm -rf *~ *.o a.out
 	
-#container.o: container.cpp container.h 
-#$(COMPILE) $(FLAGS) -c container.cpp 
-
-#sort.o: sort.cpp sort.h
-#$(COMPILE) $(FLAGS) -c sort.cpp

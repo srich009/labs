@@ -25,7 +25,7 @@ void VectorContainer::sort()
 {
     try
     {
-        //sort_function->sort(); //??
+        sort_function->sort(this); //??
     }
     catch(std::exception& e)
     {

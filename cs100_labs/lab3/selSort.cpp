@@ -1,22 +1,40 @@
+#include "selSort.h"
+//include "container.h"
 
-// change to doubles
-/*
-void select_sort(vector<int> &v)
-{
-   for(unsigned i = 0; i < v.size(); i++)
-   {
-      unsigned min = i;
-      for(unsigned j = i + 1; j < v.size(); j++)
-      {
-         if(v.at(j) < v.at(min))
-         {
-            min = j;  
-         }
-      }
-      if(v.at(i) > v.at(min))
-      {
-         swap(v.at(i), v.at(min));
-      }
-   }
-}
-*/
+
+
+void SelectionSort::sort(Container* container)
+	{
+		vector<Base*> temp;
+		int counter = 0;
+		while(counter < container->size())
+		{
+			Base* a = container->at(counter);
+			temp.push_back(a);
+			counter++;
+		}
+		int outer = 0;
+		int inner = 0;
+		int first = 0;
+		//Base* tempi = 0;
+		int length = temp.size();
+		for(outer = length - 1; outer > 0; outer--)
+		{
+			first = 0;
+			for(inner = 1; inner <= outer; inner++)
+			{
+				if(temp.at(inner)->evaluate() > temp.at(first)->evaluate())
+				{
+					first = inner;
+				}
+			}
+			// tempi = temp.at(first);
+			// temp.at(first) = temp.at(outer);
+			// temp.at(outer) = tempi;
+			container->swap(first, outer);
+		}
+		
+
+
+		
+	}
