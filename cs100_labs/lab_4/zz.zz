@@ -1,0 +1,28 @@
+--------------------
+
+base
+{
+    add
+    sub
+    mul
+    div
+    sqr
+    op
+    
+    // decorators
+    floor
+    ceil
+    abs
+}
+
+sort
+{
+    bubSort
+    selSort
+}
+
+container
+{
+    listCont
+    vectCont
+}
