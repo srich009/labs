@@ -1,0 +1,24 @@
+Sean Richardson
+
+1.
+Values before delete
+at line 30
+src = "hello"
+dst = "goodbye"
+
+at line 32
+src = "hello"
+dst = "hello"
+
+Values after delete
+at line 33
+src = "hello"
+dst = ""
+
+2.
+There is no null terminator at the end of the array after copy.
+
+3. 
+To fix this, the array should be increased in size by 1. 
+then the null terminator '\0' should be put in the last spot in array.
+The delete statement should be removed because there is no reason to delete the array that was just constructed.
