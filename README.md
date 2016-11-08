@@ -1,4 +1,6 @@
 # test
-test repository for C/C++
+Test repository for Labs
 
-currently under development...
+Currently contains labs from:
+* CS100
+    * labs: {3,4,5,6,...}
