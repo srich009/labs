@@ -21,3 +21,7 @@ container
     listCont
     vectCont
 }
+
+// I KNOW that sorts are broken, will have to scrap lab partner's design and rebuild.
+
+// At this point lab_3 probably won't get fixed, lab_4 will since it builds on lab_3
