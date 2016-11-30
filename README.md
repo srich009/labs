@@ -1,6 +1,10 @@
 # test
-Test repository for Labs
+Test repository for Computer Science Labs
 
-Currently contains labs from:
-* CS100
-    * labs: {3,4,5,6,...}
+* CS100 Labs: Design Patterns
+  * Lab 3 == Composite && Strategy
+  * Lab 4 == Decorator
+  * Lab 5 == GDB
+  * Lab 6 == Command
+  * Lab 7 == Iterator
+  * Lab 8 == Visitor
