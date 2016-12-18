@@ -2,6 +2,7 @@
 Test repository for Computer Science Labs
 
 * CS100 Labs: Design Patterns
+  * Lab 2 == BASH scripting
   * Lab 3 == Composite && Strategy
   * Lab 4 == Decorator
   * Lab 5 == GDB
