@@ -1,0 +1,17 @@
+* calc
+
+cleaned up lab 6 before integrated into lab 8
+the visitor && iterator are on the way side for now...
+
+menu.h   = undo/redo && history
+main.cpp = calculator control body
+
+------------------------------------------------------------------
+
+
+* lab_4
+not integrated yet
+
+- fix bubble && select sort, condense after
+- condense composites/decorators -> use composite.h
+- condense containers
