@@ -1,22 +1,11 @@
 #include <iostream>
 #include <string>
 
-// include necessary classes part1
-#include "add.h"
-#include "sub.h"
-#include "mul.h"
-#include "div.h"
-#include "sqr.h"
-#include "base.h"
-#include "op.h"
-
-// include necessary classes part2
-#include "container.h"
-#include "vectCont.h"
-#include "listCont.h"
-#include "sort.h"
-#include "bubSort.h"
-#include "selSort.h"
+// include necessary classes
+#include "header/composite.h"
+#include "header/decorator.h"
+#include "header/container.h"
+#include "header/sort.h"
 
 using namespace std ;
 

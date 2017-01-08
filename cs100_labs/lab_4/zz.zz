@@ -1,15 +1,21 @@
---------------------
+STRUCTURE
+------------------------
 
-base
+composite
 {
+    base
+    op
+    operator
+    unaryOperator
     add
     sub
     mul
     div
-    sqr
-    op
-    
-    // decorators
+    sqr    
+}
+
+decorator
+{
     floor
     ceil
     abs
@@ -27,5 +33,14 @@ container
     vectCont
 }
 
+------------------------
 
 // I KNOW that sorts are broken, will have to scrap lab partner's design and rebuild.
+
+TESTING
+
+* main1.cpp = test composites && decorators
+
+* main2.cpp = test containers && sorting 
+    (g++ main2.cpp src/*.cpp)
+    

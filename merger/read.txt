@@ -12,6 +12,4 @@ main.cpp = calculator control body
 * lab_4
 not integrated yet
 
-- fix bubble && select sort, condense after
-- condense composites/decorators -> use composite.h
-- condense containers
+- fix bubble && select sort

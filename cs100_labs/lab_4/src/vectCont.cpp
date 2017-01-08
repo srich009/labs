@@ -1,5 +1,4 @@
-#include "container.h"
-#include "vectCont.h"
+#include "../header/container.h"
 
 
 // push the top pointer of the tree into container

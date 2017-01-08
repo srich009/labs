@@ -19,6 +19,7 @@ class Base
 };
 //-------------------------------------
 
+
 //Leaf Class
 class Op: public Base 
 {
@@ -35,6 +36,7 @@ class Op: public Base
         };
 };
 //-------------------------------------
+
 
 //Composite Base Classes
 class Operator: public Base // Binary operator
@@ -66,6 +68,7 @@ class UnaryOperator: public Base
 };
 //-------------------------------------
 
+
 //Composite Classes
 class Add: public Operator 
 {
@@ -93,15 +96,28 @@ class Sub: public Operator
 };
 //-------------------------------------
 
-class Mult: public Operator 
+class Mul: public Operator 
 {
     public:
-        Mult() : Operator() {};
-        Mult(Base* left, Base* right) : Operator(left,right) {};
+        Mul() : Operator() {};
+        Mul(Base* left, Base* right) : Operator(left,right) {};
         
         double evaluate() 
         {
             return this->left->evaluate() * this->right->evaluate(); 
+        }
+};
+//-------------------------------------
+
+class Div: public Operator 
+{
+    public:
+        Div() : Operator() {};
+        Div(Base* left, Base* right) : Operator(left,right) {};
+        
+        double evaluate() 
+        {
+            return this->left->evaluate() / this->right->evaluate(); 
         }
 };
 //-------------------------------------
@@ -119,4 +135,4 @@ class Sqr: public UnaryOperator
 };
 //-------------------------------------
 
-#endif
+#endif // __COMPOSITE_CLASS__

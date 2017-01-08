@@ -1,19 +1,11 @@
 #include <iostream>
 #include <string>
 
-// include necessary classes part1
-#include "add.h"
-#include "sub.h"
-#include "mul.h"
-#include "div.h"
-#include "sqr.h"
-#include "base.h"
-#include "op.h"
-#include "floor.h"
-#include "ceil.h"
-#include "abs.h"
+// include necessary classes
+#include "header/composite.h"
+#include "header/decorator.h"
 
-using namespace std ;
+using namespace std;
 
 int main () 
 {

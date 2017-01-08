@@ -1,7 +1,4 @@
-#include "container.h"
-#include "listCont.h"
-#include <iostream>
-#include <algorithm>
+#include "../header/container.h"
 
 // push the top pointer of the tree into container
 void ListContainer::add_element(Base* element)
