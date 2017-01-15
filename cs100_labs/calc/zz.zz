@@ -1,0 +1,74 @@
+CLASS STRUCTURE
+------------------------
+
+composites
+{
+    Base
+    Op
+    Operator
+    UnaryOperator
+    Add
+    Sub
+    Mult
+    Div
+    Sqr    
+}
+
+decorators
+{
+    Decorator
+    Floor
+    ceil
+    Abs
+}
+
+commands
+{
+    Command
+    OpCommand
+    AddCommand
+    SubCommand
+    MultCommand
+    DivCommand
+    SqrCommand
+}
+
+iterators
+{
+    Iterator
+    NullIterator
+    UnaryIterator
+    OperatorIterator
+    PreOrderIterator    
+}
+
+visitors
+{
+    Visitor
+    PrintVisitor
+}
+
+containers
+{
+    Container
+    ListCont
+    VectCont
+}
+
+sorts
+{
+    Sort
+    BubSort
+    SelSort
+}
+----------------------------------------------
+
+FILES:
+* menu.h   = undo/redo && history
+* main.cpp = calculator control body
+
+TESTING:
+* test1.cpp = test composites && decorators
+* test2.cpp = test containers && sorting
+* test3.cpp = test iterators && visitors
+    

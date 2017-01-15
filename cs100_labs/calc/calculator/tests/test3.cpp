@@ -2,13 +2,14 @@
 
 #include <iostream>
 #include <vector>
-#include "composite.h"
-#include "iterator.h"
-#include "visitor.h"
+#include "../header/composite.h"
+#include "../header/iterator.h"
+#include "../header/visitor.h"
 
 using namespace std;
 
-int main() {
+int main() 
+{
 
 	Op* op3 = new Op(3);
 	Op* op4 = new Op(4);
@@ -21,11 +22,12 @@ int main() {
 	PrintVisitor* pvis = new PrintVisitor();
 
 	cout << "--- PreOrder Iteration ---" << endl;
-	PreOrderIterator* pre_itr = new PreOrderIterator(root);
-	for(pre_itr->first(); !pre_itr->is_done(); pre_itr->next()) {
-		pre_itr->current()->print();
-		pre_itr->current()->accept(pvis);
+	PreOrderIterator* pre_itr = new PreOrderIterator( root );
+	for( pre_itr -> first(); !pre_itr -> is_done(); pre_itr -> next() ) 
+	{
+		pre_itr -> current() -> print();
+		pre_itr -> current() -> accept( pvis );
 		cout << endl;
 	}
-	pvis->execute();
+	pvis -> execute();
 };

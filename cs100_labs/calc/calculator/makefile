@@ -1,11 +1,11 @@
 CC=g++
 CC_FLAGS=-Wall -ansi
 EXEC=calc
-SOURCES=$(wildcard *.cpp)
+SOURCES=$(wildcard src/*.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 
-$(EXEC): $(OBJECTS)
-	$(CC) $(OBJECTS) -o $(EXEC)
+$(EXEC): $(OBJECTS) main.cpp
+	$(CC) main.cpp $(OBJECTS) -o $(EXEC)
 
 %.o: %.cpp
 	$(CC) -c $(CC_FLAGS) $< -o $@

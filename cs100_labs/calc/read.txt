@@ -1,0 +1,28 @@
+CALC PROGRAM
+----------------------------------------------------------------
+
+using calc, must first load with int
+
+1. enter: <integer>
+2. enter: <operator> <space> <integer>
+
+<operator> = {+,-,*,/,^2}
+<space> = " "
+
+can undo/redo
+
+SO FAR ONLY HANDLES:
+integers
+1 operator per 2 operands
+
+------------------------------------------------------------------
+
+
+* lab_4
+not integrated yet
+
+todo:
+- decorator
+- container
+- sort
+- fix bubble && select sort
