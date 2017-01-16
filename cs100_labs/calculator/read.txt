@@ -1,4 +1,6 @@
 CALC PROGRAM
+
+needs more/better testing and development before this is practical for even simple useage
 ----------------------------------------------------------------
 
 using calc, must first load with int
@@ -20,6 +22,9 @@ integers
 * lab_4 integration
 
 todo:
+
+?? can containers/sortn work with decorated composites ??
+
 - container
 - sort
 - fix bubble && select sort
