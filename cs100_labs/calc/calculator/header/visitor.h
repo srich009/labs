@@ -23,6 +23,9 @@ class Visitor {
         virtual void multNode()= 0;      // For visiting a multiply node
         virtual void divNode()= 0;      // For visiting a divide node
         virtual void sqrNode() = 0;      // For visiting a square node
+        virtual void absNode() = 0;
+        virtual void ceilNode() = 0;
+        virtual void floorNode() = 0;
         virtual void execute() = 0;      // Print all visited nodes
 };
 //-------------------------------------------------------------------
@@ -66,6 +69,24 @@ class PrintVisitor : public Visitor {
         void sqrNode()      // For visiting a square node
         {
             output += " ^2";
+        }
+        //----------------------------------------
+        
+        void absNode()      // For visiting a square node
+        {
+            output += " Abs";
+        }
+        //----------------------------------------
+        
+        void ceilNode()      // For visiting a square node
+        {
+            output += " Ceil";
+        }
+        //----------------------------------------
+        
+        void floorNode()      // For visiting a square node
+        {
+            output += " Floor";
         }
         //----------------------------------------
         

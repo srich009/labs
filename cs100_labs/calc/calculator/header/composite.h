@@ -31,9 +31,9 @@ class Base {
         //virtual
         virtual void print() = 0;
         virtual double evaluate() = 0;
-        virtual Iterator* create_iterator() = 0;
         virtual Base* get_left() = 0;
         virtual Base* get_right() = 0;
+        virtual Iterator* create_iterator() = 0;
         virtual void accept( Visitor* ) = 0;
 };
 //---------------------------------------------
@@ -49,10 +49,10 @@ class Op: public Base {
         Op();
         Op( double val );
 
+        void print();
+        double evaluate(); 
         Base* get_left();
         Base* get_right();
-        double evaluate(); 
-        void print();
         Iterator* create_iterator();
         void accept( Visitor* );
 };
