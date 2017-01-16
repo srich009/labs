@@ -17,12 +17,20 @@ integers
 
 ------------------------------------------------------------------
 
-
-* lab_4
-not integrated yet
+* lab_4 integration
 
 todo:
-- decorator
 - container
 - sort
 - fix bubble && select sort
+
+-------------
+
+command executes composite by calling eval from the composite
+
+iterator && visitor work on composite structures
+
+containers hold composite structures
+
+sort works on containers
+

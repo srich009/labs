@@ -157,7 +157,7 @@ class Sqr: public UnaryOperator {
 
         void print();
         double evaluate();
-        void accept( Visitor* );
+        void accept( Visitor* vis );
 };
 //---------------------------------------------
 
