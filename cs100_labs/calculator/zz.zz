@@ -31,6 +31,9 @@ commands
     MultCommand
     DivCommand
     SqrCommand
+    AbsCommand
+    CeilCommand
+    FloorCommand
 }
 
 iterators

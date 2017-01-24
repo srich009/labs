@@ -2,6 +2,7 @@
 #define __COMMAND_CLASS__
 
 #include "composite.h"
+#include "decorator.h"
 
 class Command {
 	
@@ -110,6 +111,54 @@ class SqrCommand : public Command {
 		{
 			
 			root = new Sqr( ptr -> get_root() );
+		}
+		
+		double execute() 
+		{
+			return root -> evaluate();
+		}
+};
+//-------------------------------------
+
+class AbsCommand : public Command { // decorator
+	
+	public:
+		AbsCommand( Command* ptr )
+		{
+			
+			root = new Abs( ptr -> get_root() );
+		}
+		
+		double execute() 
+		{
+			return root -> evaluate();
+		}
+};
+//-------------------------------------
+
+class CeilCommand : public Command { // decorator
+	
+	public:
+		CeilCommand( Command* ptr )
+		{
+			
+			root = new Ceil( ptr -> get_root() );
+		}
+		
+		double execute() 
+		{
+			return root -> evaluate();
+		}
+};
+//-------------------------------------
+
+class FloorCommand : public Command { // decorator
+	
+	public:
+		FloorCommand( Command* ptr )
+		{
+			
+			root = new Floor( ptr -> get_root() );
 		}
 		
 		double execute() 

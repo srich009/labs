@@ -1,6 +1,6 @@
 CALC PROGRAM
 
-needs more/better testing and development before this is practical for even simple useage
+needs (more || better) testing and development before this is practical for even simple useage
 ----------------------------------------------------------------
 
 using calc, must first load with int
@@ -23,11 +23,10 @@ integers
 
 todo:
 
-?? can containers/sortn work with decorated composites ??
+?? can containers/sort work with decorated composites && the iterators/visitors??
 
-- container
-- sort
-- fix bubble && select sort
+- containers
+- sorts -> fix bubble && select sort
 
 -------------
 
